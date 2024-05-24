@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caesar Cipher</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Caesar Cipher</h2>
+            <form id="caesarForm">
+                <label for="cipher_direction">Enter to encrypt or to decrypt:</label><br>
+                <select id="cipher_direction" name="cipher_direction">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select><br>
+                <label for="start_text">Enter text:</label><br>
+                <input type="text" id="start_text" name="start_text"><br>
+                <label for="shift_amount">Enter the shift number:</label><br>
+                <select id="shift_amount" name="shift_amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select><br>
+                <input type="submit" value="Submit">
+            </form> 
+            <p id="result"></p>
+        </div>
+
+        <script src="static/caesar.js"></script>
+    </body>
+</html>
